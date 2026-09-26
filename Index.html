@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Virtual Desk India | Virtual Office for GST & MCA Registration</title>
+  <meta name="description" content="Virtual Office addresses in 100+ Indian cities for GST registration, ROC incorporation, and mailing support.">
+  <meta name="robots" content="index, follow">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: { 50: '#f0f7ff', 100: '#e0effe', 500: '#0284c7', 600: '#0369a1', 700: '#075985', 800: '#0c4a6e', 900: '#082f49' },
+            accent: { 400: '#38bdf8', 500: '#0ea5e9' }
+          }
+        }
+      }
+    }
+  </script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased font-sans">
+
+  <!-- TOP BAR -->
+  <div class="bg-gradient-to-r from-brand-900 via-brand-800 to-slate-900 text-white text-xs py-2 px-4 shadow-sm">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+      <div class="flex items-center gap-2">
+        <span class="inline-flex items-center px-2 py-0.5 rounded text-[11px] font-bold bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">
+          <i data-lucide="shield-check" class="w-3.5 h-3.5 mr-1"></i> 100% GST & ROC Compliant
+        </span>
+        <span class="hidden md:inline text-slate-300">Unconditional Owner NOC + 12-Month Lease + Municipal Bill</span>
+      </div>
+      <div class="flex items-center gap-4 text-slate-300">
+        <a id="topPhoneLink" href="tel:+919876543210" class="hover:text-white flex items-center gap-1 transition">
+          <i data-lucide="phone-call" class="w-3 h-3 text-accent-400"></i>
+          <span id="topPhoneText">+91 98765 43210</span>
+        </a>
+        <span class="text-slate-600">|</span>
+        <a id="topEmailLink" href="mailto:support@virtualdeskindia.com" class="hover:text-white flex items-center gap-1 transition">
+          <i data-lucide="mail" class="w-3 h-3 text-accent-400"></i>
+          <span id="topEmailText">support@virtualdeskindia.com</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVIGATION -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200/80 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3">
+        <div class="w-11 h-11 rounded-xl bg-gradient-to-tr from-brand-700 to-accent-500 flex items-center justify-center text-white shadow-md shadow-brand-500/20">
+          <i data-lucide="building-2" class="w-6 h-6"></i>
+        </div>
+        <div>
+          <span class="text-2xl font-black tracking-tight text-slate-900 flex items-center">
+            VirtualDesk<span class="text-brand-600">India</span>
+          </span>
+          <p class="text-[10px] tracking-wider uppercase font-semibold text-slate-500">Pan-India Corporate Hubs</p>
+        </div>
+      </a>
+
+      <nav class="hidden lg:flex items-center gap-7 text-sm font-medium text-slate-700">
+        <a href="#spaces" class="hover:text-brand-600 transition">Commercial Spaces</a>
+        <a href="#calculator" class="hover:text-brand-600 transition">Price Estimator</a>
+        <a href="#turnkey" class="hover:text-brand-600 transition flex items-center gap-1.5">
+          <span class="relative flex h-2 w-2">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+          </span>
+          Ready-to-Start Companies
+        </a>
+        <a href="#compliance" class="hover:text-brand-600 transition">Compliance Guarantee</a>
+        <a href="#faq" class="hover:text-brand-600 transition">FAQs</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <a id="navWhatsappBtn" href="#" target="_blank" class="hidden sm:inline-flex items-center gap-2 px-4 py-2.5 rounded-lg text-sm font-semibold bg-emerald-50 text-emerald-700 border border-emerald-200 hover:bg-emerald-100 transition shadow-sm">
+          <i data-lucide="message-circle" class="w-4 h-4 text-emerald-600"></i>
+          <span>WhatsApp Chat</span>
+        </a>
+        <a href="#leadModal" onclick="openLeadModal('Quick Consultation')" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg text-sm font-semibold bg-brand-600 text-white hover:bg-brand-700 shadow-md shadow-brand-600/20 transition">
+          <i data-lucide="file-check" class="w-4 h-4"></i>
+          <span>Get Instant Quote</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="relative pt-12 pb-20 overflow-hidden bg-gradient-to-b from-brand-50/70 via-white to-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-semibold bg-brand-100 text-brand-800 border border-brand-200">
+            <i data-lucide="map-pin" class="w-3.5 h-3.5 text-brand-600"></i>
+            Active Locations in All Indian States & State Capitals
+          </div>
+
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-[1.15]">
+            India's Leading Virtual Office for <span class="bg-gradient-to-r from-brand-600 to-accent-500 bg-clip-text text-transparent">GST & MCA Registration</span>
+          </h1>
+
+          <p class="text-lg text-slate-600 leading-relaxed max-w-2xl">
+            Prime business addresses across Delhi NCR, Mumbai, Bengaluru, Hyderabad, and all state capitals. Compliant NOC, Electricity Bill & Rent Agreement delivered within 24 hours.
+          </p>
+
+          <div class="grid grid-cols-3 gap-4 pt-2 border-y border-slate-200 py-4 max-w-xl">
+            <div>
+              <p class="text-2xl sm:text-3xl font-black text-brand-700">₹699<span class="text-xs font-normal text-slate-500">/mo</span></p>
+              <p class="text-xs font-medium text-slate-500 mt-0.5">Starting Plans</p>
+            </div>
+            <div>
+              <p class="text-2xl sm:text-3xl font-black text-slate-800">100+<span class="text-xs font-normal text-slate-500"> Hubs</span></p>
+              <p class="text-xs font-medium text-slate-500 mt-0.5">Pan-India Availability</p>
+            </div>
+            <div>
+              <p class="text-2xl sm:text-3xl font-black text-emerald-600">&lt;24 Hrs</p>
+              <p class="text-xs font-medium text-slate-500 mt-0.5">Documentation Kit</p>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap gap-4 pt-2">
+            <a href="#spaces" class="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl font-bold bg-brand-600 text-white hover:bg-brand-700 shadow-lg shadow-brand-600/30 transition">
+              <i data-lucide="search" class="w-5 h-5"></i>
+              <span>Browse Spaces</span>
+            </a>
+            <a href="#calculator" class="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl font-bold bg-white text-slate-700 border border-slate-300 hover:bg-slate-50 transition shadow-sm">
+              <i data-lucide="calculator" class="w-5 h-5 text-brand-600"></i>
+              <span>Calculate Price</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Form -->
+        <div class="lg:col-span-5">
+          <div class="bg-white rounded-2xl p-6 sm:p-8 shadow-xl border border-slate-200 relative">
+            <div class="absolute -top-3 right-6 bg-gradient-to-r from-emerald-500 to-teal-500 text-white text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-sm">
+              Instant Verification
+            </div>
+            <h2 class="text-xl font-bold text-slate-900">Request Instant Proposal</h2>
+            <p class="text-xs text-slate-500 mt-1">Receive complete legal documentation kit & price quote</p>
+
+            <form id="heroLeadForm" onsubmit="handlePublicLeadSubmit(event, 'Hero Form')" class="space-y-4 mt-6">
+              <div>
+                <label class="block text-xs font-semibold text-slate-700 mb-1">Full Name</label>
+                <input type="text" name="leadName" required placeholder="e.g. Rahul Sharma" class="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 text-sm focus:ring-2 focus:ring-brand-500 focus:outline-none">
+              </div>
+              <div class="grid grid-cols-2 gap-3">
+                <div>
+                  <label class="block text-xs font-semibold text-slate-700 mb-1">WhatsApp Phone</label>
+                  <input type="tel" name="leadPhone" required placeholder="+91 98765 43210" class="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 text-sm focus:ring-2 focus:ring-brand-500 focus:outline-none">
+                </div>
+                <div>
+                  <label class="block text-xs font-semibold text-slate-700 mb-1">Email</label>
+                  <input type="email" name="leadEmail" required placeholder="rahul@company.com" class="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 text-sm focus:ring-2 focus:ring-brand-500 focus:outline-none">
+                </div>
+              </div>
+              <div class="grid grid-cols-2 gap-3">
+                <div>
+                  <label class="block text-xs font-semibold text-slate-700 mb-1">Preferred City</label>
+                  <select name="leadCity" class="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 text-sm focus:ring-2 focus:ring-brand-500 focus:outline-none bg-white">
+                    <option value="Delhi NCR">Delhi NCR</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Bengaluru">Bengaluru</option>
+                    <option value="Hyderabad">Hyderabad</option>
+                    <option value="Chennai">Chennai</option>
+                    <option value="Kolkata">Kolkata</option>
+                    <option value="Pune">Pune</option>
+                    <option value="Ahmedabad">Ahmedabad / GIFT City</option>
+                    <option value="Jaipur">Jaipur</option>
+                    <option value="Lucknow">Lucknow</option>
+                    <option value="Kochi">Kochi</option>
+                    <option value="Other">Other State Capital</option>
+                  </select>
+                </div>
+                <div>
+                  <label class="block text-xs font-semibold text-slate-700 mb-1">Required Purpose</label>
+                  <select name="leadService" class="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 text-sm focus:ring-2 focus:ring-brand-500 focus:outline-none bg-white">
+                    <option value="GST Registration">GST Registration (PPOB/APOB)</option>
+                    <option value="MCA / ROC Registration">MCA / Company ROC</option>
+                    <option value="Business Mailing Address">Mailing & Prestigious Address</option>
+                    <option value="Ready-to-Start Company">Ready-to-Start Registered Company</option>
+                  </select>
+                </div>
+              </div>
+
+              <button type="submit" id="heroSubmitBtn" class="w-full py-3 px-4 rounded-xl font-bold bg-brand-600 hover:bg-brand-700 text-white shadow-md shadow-brand-600/30 transition flex items-center justify-center gap-2">
+                <span>Submit & Get Documentation Kit</span>
+                <i data-lucide="arrow-right" class="w-4 h-4"></i>
+              </button>
+              <div id="heroLeadSuccess" class="hidden p-3 rounded-lg bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs font-medium text-center">
+                ✓ Thank you! Your proposal request has been logged. Our compliance officer will reach out via WhatsApp shortly.
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- COMMERCIAL SPACES -->
+  <section id="spaces" class="py-16 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8">
+        <div>
+          <span class="text-xs uppercase font-bold tracking-wider text-brand-600">Pan-India Availability</span>
+          <h2 class="text-3xl font-extrabold text-slate-900 mt-1">Commercial Spaces & Business Hubs</h2>
+          <p class="text-slate-600 text-sm mt-1">Ranked by verification status, authority compliance, and priority rating</p>
+        </div>
+        
+        <div class="flex items-center gap-3">
+          <span class="px-3 py-1.5 rounded-lg bg-white border border-slate-200 text-xs font-semibold text-slate-700 shadow-sm">
+            Total Locations: <strong id="totalSpacesCount" class="text-brand-600">...</strong>
+          </span>
+        </div>
+      </div>
+
+      <!-- Filters & Priority Toolbar -->
+      <div class="bg-white p-4 rounded-2xl shadow-sm border border-slate-200 mb-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div>
+          <label class="block text-xs font-bold text-slate-600 mb-1">Search Keyword / Location</label>
+          <div class="relative">
+            <i data-lucide="search" class="w-4 h-4 absolute left-3 top-3 text-slate-400"></i>
+            <input type="text" id="spaceSearchInput" oninput="applyFilters()" placeholder="City, hub, or address..." class="w-full pl-9 pr-3 py-2 rounded-lg border border-slate-300 text-sm focus:ring-2 focus:ring-brand-500 focus:outline-none">
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold text-slate-600 mb-1">Filter by State</label>
+          <select id="stateFilter" onchange="applyFilters()" class="w-full px-3 py-2 rounded-lg border border-slate-300 text-sm focus:ring-2 focus:ring-brand-500 focus:outline-none bg-white">
+            <option value="ALL">All States & Union Territories</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold text-slate-600 mb-1">Target Plan Type</label>
+          <select id="planFilter" onchange="applyFilters()" class="w-full px-3 py-2 rounded-lg border border-slate-300 text-sm focus:ring-2 focus:ring-brand-500 focus:outline-none bg-white">
+            <option value="ALL">All Commercial Plans</option>
+            <option value="GST">GST Registration Ready</option>
+            <option value="ROC">MCA / Company ROC Ready</option>
+            <option value="MAIL">Business Mailing Only</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold text-slate-600 mb-1">Sort & Order</label>
+          <select id="sortOrderSelect" onchange="applyFilters()" class="w-full px-3 py-2 rounded-lg border border-slate-300 text-sm focus:ring-2 focus:ring-brand-500 focus:outline-none bg-white font-medium">
+            <option value="priority_asc">Priority Order (Default Top View)</option>
+            <option value="price_asc">Price: Low to High</option>
+            <option value="price_desc">Price: High to Low</option>
+            <option value="rating_desc">Highest Rated</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Spaces Cards Grid -->
+      <div id="spacesGrid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="col-span-full py-12 text-center text-slate-400">Loading spaces...</div>
+      </div>
+
+      <div id="noSpacesMessage" class="hidden text-center py-16 bg-white rounded-2xl border border-dashed border-slate-300 mt-4">
+        <i data-lucide="map-pin-off" class="w-12 h-12 text-slate-400 mx-auto mb-3"></i>
+        <p class="text-base font-bold text-slate-800">No commercial office matches your criteria</p>
+        <button onclick="resetFilters()" class="mt-4 px-4 py-2 bg-brand-600 text-white text-xs font-bold rounded-lg hover:bg-brand-700">Reset Filters</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CALCULATOR -->
+  <section id="calculator" class="py-16 bg-white border-t border-slate-200">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-10">
+        <span class="text-xs uppercase font-bold tracking-wider text-brand-600">Cost Transparency</span>
+        <h2 class="text-3xl font-extrabold text-slate-900 mt-1">Instant Price Estimator</h2>
+        <p class="text-slate-600 text-sm mt-2">Transparent pricing with unconditional NOC, Lease Agreement & Utility Bill included</p>
+      </div>
+
+      <div class="bg-gradient-to-br from-slate-900 to-brand-900 text-white rounded-3xl p-6 sm:p-10 shadow-2xl">
+        <div class="grid md:grid-cols-12 gap-8 items-center">
+          
+          <div class="md:col-span-7 space-y-6">
+            <div>
+              <label class="block text-xs font-bold text-slate-300 mb-2">1. Select Required Purpose</label>
+              <div class="grid grid-cols-3 gap-2">
+                <button type="button" onclick="setCalcPlan('MAIL', 799)" id="btnCalcMail" class="calc-plan-btn p-3 rounded-xl border border-slate-700 bg-slate-800/80 text-left hover:border-brand-400 transition">
+                  <span class="block text-xs font-bold text-white">Mailing Hub</span>
+                  <span class="block text-[11px] text-slate-400 mt-0.5">₹799/mo</span>
+                </button>
+                <button type="button" onclick="setCalcPlan('GST', 1299)" id="btnCalcGst" class="calc-plan-btn p-3 rounded-xl border-2 border-brand-400 bg-brand-800/40 text-left transition">
+                  <span class="block text-xs font-bold text-white">GST Registered</span>
+                  <span class="block text-[11px] text-accent-300 mt-0.5">₹1,299/mo</span>
+                </button>
+                <button type="button" onclick="setCalcPlan('ROC', 1799)" id="btnCalcRoc" class="calc-plan-btn p-3 rounded-xl border border-slate-700 bg-slate-800/80 text-left hover:border-brand-400 transition">
+                  <span class="block text-xs font-bold text-white">MCA / ROC</span>
+                  <span class="block text-[11px] text-slate-400 mt-0.5">₹1,799/mo</span>
+                </button>
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold text-slate-300 mb-2">2. Billing Tenure</label>
+              <div class="grid grid-cols-3 gap-2">
+                <button type="button" onclick="setCalcTenure(12, 0.15)" id="btnTenure12" class="calc-tenure-btn p-2.5 rounded-xl border-2 border-brand-400 bg-brand-800/40 text-center font-bold text-xs text-white">
+                  12 Months <span class="text-[10px] block text-emerald-400">Save 15%</span>
+                </button>
+                <button type="button" onclick="setCalcTenure(24, 0.25)" id="btnTenure24" class="calc-tenure-btn p-2.5 rounded-xl border border-slate-700 bg-slate-800/80 text-center font-bold text-xs text-slate-300">
+                  24 Months <span class="text-[10px] block text-emerald-400">Save 25%</span>
+                </button>
+                <button type="button" onclick="setCalcTenure(36, 0.35)" id="btnTenure36" class="calc-tenure-btn p-2.5 rounded-xl border border-slate-700 bg-slate-800/80 text-center font-bold text-xs text-slate-300">
+                  36 Months <span class="text-[10px] block text-emerald-400">Save 35%</span>
+                </button>
+              </div>
+            </div>
+
+            <div>
+              <div class="flex justify-between items-center mb-1">
+                <label class="text-xs font-bold text-slate-300">3. Number of Hubs</label>
+                <span id="calcHubCountLabel" class="text-xs font-bold text-accent-400">1 Hub</span>
+              </div>
+              <input type="range" id="calcHubsSlider" min="1" max="10" value="1" oninput="updateCalculator()" class="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-brand-500">
+            </div>
+          </div>
+
+          <div class="md:col-span-5 bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/15 text-center flex flex-col justify-between h-full">
+            <div>
+              <span class="text-[11px] uppercase font-bold tracking-wider text-slate-300">Estimated Total</span>
+              <div class="mt-3">
+                <span class="text-4xl sm:text-5xl font-black text-white" id="calcTotalPrice">₹13,250</span>
+                <span class="text-xs text-slate-300 block mt-1" id="calcTenureSubtitle">For 12 Months (All Inclusive)</span>
+              </div>
+
+              <div class="my-5 border-t border-white/10 pt-4 space-y-1.5 text-left text-xs text-slate-300">
+                <div class="flex items-center justify-between">
+                  <span>Selected Service:</span>
+                  <strong class="text-white" id="calcSelectedServiceName">GST Registration</strong>
+                </div>
+                <div class="flex items-center justify-between">
+                  <span>Unconditional Owner NOC:</span>
+                  <span class="text-emerald-400 font-bold">Included</span>
+                </div>
+                <div class="flex items-center justify-between">
+                  <span>12-Month Lease Agreement:</span>
+                  <span class="text-emerald-400 font-bold">Included</span>
+                </div>
+                <div class="flex items-center justify-between">
+                  <span>Electricity Bill & Signage:</span>
+                  <span class="text-emerald-400 font-bold">Included</span>
+                </div>
+              </div>
+            </div>
+
+            <button onclick="bookCalculatorQuote()" class="w-full py-3.5 px-4 rounded-xl font-bold bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 text-white shadow-lg shadow-emerald-500/30 transition flex items-center justify-center gap-2">
+              <i data-lucide="check-circle" class="w-5 h-5"></i>
+              <span>Reserve This Rate Now</span>
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- READY-TO-START BUSINESSES -->
+  <section id="turnkey" class="py-16 bg-slate-900 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10">
+        <div>
+          <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-amber-500/20 text-amber-300 border border-amber-500/30">
+            <i data-lucide="zap" class="w-3.5 h-3.5"></i> Instant Takeover
+          </span>
+          <h2 class="text-3xl font-extrabold text-white mt-2">Ready-to-Start Registered Companies</h2>
+          <p class="text-slate-400 text-sm mt-1">Pre-incorporated Indian entities with active bank accounts and GSTIN ready for immediate operation.</p>
+        </div>
+
+        <a href="#leadModal" onclick="openLeadModal('Turnkey Company Inquiry')" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-lg text-xs font-bold bg-white/10 hover:bg-white/20 text-white border border-white/20 transition">
+          <i data-lucide="help-circle" class="w-4 h-4"></i>
+          <span>Check Availability</span>
+        </a>
+      </div>
+
+      <div id="turnkeyGrid" class="grid md:grid-cols-3 gap-6">
+        <!-- Rendered via JavaScript -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- COMPLIANCE SECTION -->
+  <section id="compliance" class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <span class="text-xs uppercase font-bold tracking-wider text-brand-600">Legal Assurance</span>
+        <h2 class="text-3xl font-extrabold text-slate-900 mt-1">100% Guaranteed Document Set</h2>
+        <p class="text-slate-600 text-sm mt-2">Statutory documentation approved by Central/State GST authorities & Registrar of Companies (ROC).</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="p-6 rounded-2xl border border-slate-200 bg-slate-50/50 hover:bg-white hover:shadow-lg transition">
+          <div class="w-12 h-12 rounded-xl bg-blue-100 text-blue-600 flex items-center justify-center mb-4">
+            <i data-lucide="file-text" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-lg font-bold text-slate-900">Unconditional Owner NOC</h3>
+          <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+            Signed directly by property owners authorizing company commercial use, GST registration, and bank KYC verification.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-2xl border border-slate-200 bg-slate-50/50 hover:bg-white hover:shadow-lg transition">
+          <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-600 flex items-center justify-center mb-4">
+            <i data-lucide="file-check-2" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-lg font-bold text-slate-900">12-Month Lease Agreement</h3>
+          <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+            Drafted on official e-stamp paper with legal tenant clauses, space demarcation, and tenure documentation.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-2xl border border-slate-200 bg-slate-50/50 hover:bg-white hover:shadow-lg transition">
+          <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-600 flex items-center justify-center mb-4">
+            <i data-lucide="zap" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-lg font-bold text-slate-900">Latest Utility Bill</h3>
+          <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+            Recent paid electricity bill (&lt;30 days) with matching property survey and address records to prevent officer objection.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQS -->
+  <section id="faq" class="py-16 bg-slate-50 border-t border-slate-200">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-10">
+        <span class="text-xs uppercase font-bold tracking-wider text-brand-600">Got Questions?</span>
+        <h2 class="text-3xl font-extrabold text-slate-900 mt-1">Frequently Asked Questions</h2>
+        <p class="text-slate-600 text-sm mt-2">Everything about virtual office compliance, GST approvals, and physical inspection support</p>
+      </div>
+
+      <div id="faqAccordionContainer" class="space-y-4">
+        <!-- Populated via JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- LEAD INQUIRY MODAL -->
+  <div id="leadModal" class="fixed inset-0 z-50 hidden bg-slate-900/60 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="bg-white w-full max-w-lg rounded-2xl shadow-2xl border border-slate-200 overflow-hidden transform transition-all">
+      <div class="bg-gradient-to-r from-brand-900 to-slate-900 text-white p-6 flex justify-between items-center">
+        <div>
+          <h3 class="text-lg font-bold" id="modalTitle">Request Space Proposal</h3>
+          <p class="text-xs text-slate-300 mt-0.5" id="modalSubtitle">Pan-India Virtual Office Support</p>
+        </div>
+        <button onclick="closeLeadModal()" class="text-slate-400 hover:text-white">
+          <i data-lucide="x" class="w-6 h-6"></i>
+        </button>
+      </div>
+
+      <form id="modalLeadForm" onsubmit="handlePublicLeadSubmit(event, 'Modal Form')" class="p-6 space-y-4">
+        <input type="hidden" id="modalPrefilledItem" name="prefilledItem" value="">
+
+        <div>
+          <label class="block text-xs font-bold text-slate-700 mb-1">Your Full Name</label>
+          <input type="text" name="leadName" required placeholder="e.g. Vikram Singhal" class="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 text-sm focus:ring-2 focus:ring-brand-500 focus:outline-none">
+        </div>
+
+        <div class="grid grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1">WhatsApp Phone</label>
+            <input type="tel" name="leadPhone" required placeholder="+91 98765 43210" class="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 text-sm focus:ring-2 focus:ring-brand-500 focus:outline-none">
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1">Email</label>
+            <input type="email" name="leadEmail" required placeholder="vikram@enterprise.com" class="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 text-sm focus:ring-2 focus:ring-brand-500 focus:outline-none">
+          </div>
+        </div>
+
+        <div class="grid grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1">Target City</label>
+            <input type="text" id="modalCityInput" name="leadCity" required placeholder="e.g. Bengaluru" class="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 text-sm focus:ring-2 focus:ring-brand-500 focus:outline-none">
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1">Required Plan</label>
+            <select id="modalPlanSelect" name="leadService" class="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 text-sm focus:ring-2 focus:ring-brand-500 focus:outline-none bg-white">
+              <option value="GST Registration">GST Registration (PPOB/APOB)</option>
+              <option value="MCA / ROC Registration">MCA / Company ROC</option>
+              <option value="Business Mailing Address">Mailing & Courier Hub</option>
+              <option value="Ready-to-Start Company">Ready-to-Start Company</option>
+            </select>
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold text-slate-700 mb-1">Notes / Space Requirements</label>
+          <textarea name="leadNotes" rows="2" placeholder="Mention specific city or company names..." class="w-full px-3.5 py-2 rounded-lg border border-slate-300 text-sm focus:ring-2 focus:ring-brand-500 focus:outline-none"></textarea>
+        </div>
+
+        <button type="submit" id="modalSubmitBtn" class="w-full py-3 px-4 rounded-xl font-bold bg-brand-600 hover:bg-brand-700 text-white shadow-md shadow-brand-600/30 transition flex items-center justify-center gap-2">
+          <span>Submit Inquiry</span>
+          <i data-lucide="send" class="w-4 h-4"></i>
+        </button>
+
+        <div id="modalSuccessMsg" class="hidden p-3 rounded-lg bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs font-medium text-center">
+          ✓ Inquiry successfully recorded! We will connect with you via WhatsApp and Email.
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- FLOATING WHATSAPP -->
+  <a id="floatingWhatsappBtn" href="#" target="_blank" class="fixed bottom-6 right-6 z-40 bg-emerald-500 hover:bg-emerald-600 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-xl shadow-emerald-500/30 hover:scale-110 transition-transform">
+    <i data-lucide="message-circle" class="w-7 h-7"></i>
+  </a>
+
+  <!-- FOOTER -->
+  <footer class="bg-slate-900 text-slate-400 text-sm pt-14 pb-8 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-10 border-b border-slate-800">
+        
+        <div class="space-y-4 md:col-span-1">
+          <div class="flex items-center gap-2">
+            <div class="w-9 h-9 rounded-lg bg-brand-600 flex items-center justify-center text-white font-bold">
+              <i data-lucide="building-2" class="w-5 h-5"></i>
+            </div>
+            <span class="text-xl font-black text-white">VirtualDesk<span class="text-brand-500">India</span></span>
+          </div>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Pan-India Virtual Office Network providing verified commercial addresses for GST registration, ROC compliance, and instant turnkey business solutions.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="text-xs uppercase font-bold tracking-wider text-slate-200 mb-3">Popular Hubs</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="#spaces" class="hover:text-white transition">Virtual Office Delhi NCR</a></li>
+            <li><a href="#spaces" class="hover:text-white transition">Virtual Office Mumbai BKC</a></li>
+            <li><a href="#spaces" class="hover:text-white transition">Virtual Office Bengaluru</a></li>
+            <li><a href="#spaces" class="hover:text-white transition">Virtual Office Hyderabad</a></li>
+            <li><a href="#spaces" class="hover:text-white transition">Virtual Office Chennai</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-xs uppercase font-bold tracking-wider text-slate-200 mb-3">Services</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="#compliance" class="hover:text-white transition">GST PPOB & APOB Registration</a></li>
+            <li><a href="#compliance" class="hover:text-white transition">MCA / ROC Company Formation</a></li>
+            <li><a href="#compliance" class="hover:text-white transition">Corporate Mailing & Courier</a></li>
+            <li><a href="#turnkey" class="hover:text-white transition">Ready-to-Start Companies</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-xs uppercase font-bold tracking-wider text-slate-200 mb-3">Contact Support</h4>
+          <p class="text-xs text-slate-300" id="footerAddressText">DLF Cyber City, Tower B, Gurugram, Haryana</p>
+          <div class="mt-3 space-y-1.5 text-xs">
+            <p><strong class="text-white">Helpline:</strong> <span id="footerPhoneText">+91 98765 43210</span></p>
+            <p><strong class="text-white">Email:</strong> <span id="footerEmailText">support@virtualdeskindia.com</span></p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="pt-6 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-500 gap-4">
+        <p>&copy; 2026 VirtualDeskIndia.com. All rights reserved.</p>
+        <div class="flex items-center gap-6">
+          <a href="#" class="hover:text-slate-300">Privacy Policy</a>
+          <a href="#" class="hover:text-slate-300">Terms of Service</a>
+          <a href="#" class="hover:text-slate-300">GST Compliance Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- DYNAMIC LIVE CONNECTIVITY SCRIPT -->
+  <script>
+    // === DEPLOYED GOOGLE APPS SCRIPT WEB APP URL ===
+    const API_BACKEND_URL = "https://script.google.com/macros/s/AKfycbxaNSET1_Dwi_tbnaPDQdzSP-rg_ldKn3a8OLLkqvfVewgMn3btJk7izdtsIW8EvcLl/exec";
+
+    const DEFAULT_SPACES = [
+      { id: 'VDI-DL-01', priority: 1, name: 'Connaught Place Premium Hub', city: 'New Delhi', state: 'Delhi NCR', address: 'Barakhamba Road, Connaught Place', priceMail: 999, priceGst: 1499, priceRoc: 1999, featured: true, rating: 4.9, reviews: 142, tags: ['Metro Station Access', 'GST Signage Board', 'Physical Audit Support'] },
+      { id: 'VDI-MH-02', priority: 2, name: 'BKC Financial Tower', city: 'Mumbai', state: 'Maharashtra', address: 'Bandra Kurla Complex, Bandra East', priceMail: 1499, priceGst: 2199, priceRoc: 2799, featured: true, rating: 4.95, reviews: 198, tags: ['Grade-A Tower', 'Fast NOC', 'Courier Dispatch'] },
+      { id: 'VDI-KA-03', priority: 3, name: 'Koramangala Tech Park', city: 'Bengaluru', state: 'Karnataka', address: '80 Feet Road, 4th Block, Koramangala', priceMail: 1199, priceGst: 1799, priceRoc: 2299, featured: true, rating: 4.9, reviews: 165, tags: ['Fast Electricity Bill', 'Meeting Rooms', 'Startup Hub'] },
+      { id: 'VDI-TS-04', priority: 4, name: 'HITEC City Silicon Hub', city: 'Hyderabad', state: 'Telangana', address: 'Cyber Towers Road, HITEC City, Madhapur', priceMail: 999, priceGst: 1499, priceRoc: 1999, featured: true, rating: 4.88, reviews: 120, tags: ['T-Hub Proximity', 'ROC Cleared', 'On-site Manager'] },
+      { id: 'VDI-TN-05', priority: 5, name: 'Guindy Industrial Corridor', city: 'Chennai', state: 'Tamil Nadu', address: 'Mount Poonamallee Road, Guindy', priceMail: 899, priceGst: 1399, priceRoc: 1899, featured: false, rating: 4.85, reviews: 94, tags: ['Airport Access', 'Instant NOC', 'Courier Desk'] },
+      { id: 'VDI-MH-06', priority: 6, name: 'Hinjewadi Phase 1 Hub', city: 'Pune', state: 'Maharashtra', address: 'Rajiv Gandhi Infotech Park, Hinjewadi', priceMail: 899, priceGst: 1399, priceRoc: 1899, featured: false, rating: 4.86, reviews: 88, tags: ['IT Hub', 'Fast Document Dispatch', 'GST Verified'] }
+    ];
+
+    const DEFAULT_TURNKEY = [
+      { id: 'TB-01', priority: 1, name: 'Nexora Tech Solutions Pvt Ltd', entityType: 'Private Limited Company', state: 'Karnataka (Bengaluru)', capital: '₹1,00,000', bank: 'HDFC Bank (Active Current A/c)', gst: 'Active 29XXXX GSTIN', price: 49999, features: ['Clean CIBIL', 'Ready MCA INC-22', 'Directorship transfer in 48h', 'DSC Included'] },
+      { id: 'TB-02', priority: 2, name: 'AeroStar Logistics & Trade LLP', entityType: 'Limited Liability Partnership', state: 'Maharashtra (Mumbai)', capital: '₹1,00,000', bank: 'ICICI Bank (Active Current A/c)', gst: 'Active 27XXXX GSTIN', price: 38999, features: ['Zero Debt', 'IEC Code Active', 'Ready LLP Agreement', 'PAN & TAN Active'] },
+      { id: 'TB-03', priority: 3, name: 'Vanguard Finserve Ventures Pvt Ltd', entityType: 'Private Limited Company', state: 'Delhi NCR (New Delhi)', capital: '₹5,00,000', bank: 'Axis Bank (Active Current A/c)', gst: 'Active 07XXXX GSTIN', price: 64999, features: ['1+ Year Vintage', 'Higher Authorized Capital', 'Instant Board Resolution', 'Immediate Billing Ready'] }
+    ];
+
+    const DEFAULT_FAQS = [
+      { id: 'FAQ-01', priority: 1, question: 'Will the GST Officer approve this virtual office address?', answer: 'Yes, 100%. We provide an unconditional owner NOC, a 12-month registered commercial rent agreement, and the latest municipal electricity bill. Our center team assists directly during field visits.' },
+      { id: 'FAQ-02', priority: 2, question: 'Can I open an Indian Bank Current Account with this address?', answer: 'Absolutely. Leading banks (HDFC, ICICI, SBI, Axis, Kotak) routinely verify and open accounts using our legal documentation and registered office proof.' },
+      { id: 'FAQ-03', priority: 3, question: 'How quickly will I receive the legal registration documents?', answer: 'Once your basic KYC documents (PAN, Aadhaar/Passport) are submitted, we execute and deliver all digital notarized documents within 24 business hours.' }
+    ];
+
+    const DEFAULT_SETTINGS = {
+      whatsappNumber: '919876543210',
+      whatsappGreeting: 'Hello Virtual Desk India, I would like to inquire about virtual office space and pricing.',
+      helplinePhone: '+91 98765 43210',
+      supportEmail: 'support@virtualdeskindia.com',
+      corporateOffice: 'Level 8, DLF Cyber City, Tower B, Gurugram, Haryana - 122002'
+    };
+
+    let spacesData = [...DEFAULT_SPACES];
+    let turnkeyData = [...DEFAULT_TURNKEY];
+    let faqsData = [...DEFAULT_FAQS];
+    let settingsData = { ...DEFAULT_SETTINGS };
+
+    let calcState = { planType: 'GST', baseMonthlyPrice: 1299, tenureMonths: 12, discount: 0.15, hubs: 1 };
+
+    async function loadDataFromCloud() {
+      renderAllComponents();
+
+      if (!API_BACKEND_URL || API_BACKEND_URL.includes("YOUR_DEPLOYED_URL_HERE")) {
+        return;
+      }
+
+      try {
+        const resp = await fetch(API_BACKEND_URL + "?action=loadAll");
+        const json = await resp.json();
+        if (json.status === "success") {
+          if (json.spaces && json.spaces.length > 0) spacesData = json.spaces;
+          if (json.turnkey && json.turnkey.length > 0) turnkeyData = json.turnkey;
+          if (json.faqs && json.faqs.length > 0) faqsData = json.faqs;
+          if (json.settings && Object.keys(json.settings).length > 0) settingsData = { ...DEFAULT_SETTINGS, ...json.settings };
+          renderAllComponents();
+        }
+      } catch (err) {
+        console.warn("Could not fetch remote sheet data", err);
+      }
+    }
+
+    function renderAllComponents() {
+      applySettingsToDOM();
+      populateStateFilterOptions();
+      renderSpaces();
+      renderTurnkey();
+      renderFaqs();
+      updateCalculator();
+    }
+
+    function applySettingsToDOM() {
+      const waUrl = `https://wa.me/${settingsData.whatsappNumber}?text=${encodeURIComponent(settingsData.whatsappGreeting)}`;
+      const navWa = document.getElementById('navWhatsappBtn');
+      const floatWa = document.getElementById('floatingWhatsappBtn');
+      if (navWa) navWa.href = waUrl;
+      if (floatWa) floatWa.href = waUrl;
+
+      const topPhoneLink = document.getElementById('topPhoneLink');
+      const topPhoneText = document.getElementById('topPhoneText');
+      const footerPhoneText = document.getElementById('footerPhoneText');
+      if (topPhoneLink) topPhoneLink.href = `tel:${settingsData.helplinePhone.replace(/\s+/g, '')}`;
+      if (topPhoneText) topPhoneText.innerText = settingsData.helplinePhone;
+      if (footerPhoneText) footerPhoneText.innerText = settingsData.helplinePhone;
+
+      const topEmailLink = document.getElementById('topEmailLink');
+      const topEmailText = document.getElementById('topEmailText');
+      const footerEmailText = document.getElementById('footerEmailText');
+      if (topEmailLink) topEmailLink.href = `mailto:${settingsData.supportEmail}`;
+      if (topEmailText) topEmailText.innerText = settingsData.supportEmail;
+      if (footerEmailText) footerEmailText.innerText = settingsData.supportEmail;
+
+      const footerAddressText = document.getElementById('footerAddressText');
+      if (footerAddressText) footerAddressText.innerText = settingsData.corporateOffice;
+    }
+
+    function populateStateFilterOptions() {
+      const stateSelect = document.getElementById('stateFilter');
+      if (!stateSelect) return;
+      const states = Array.from(new Set(spacesData.map(s => s.state))).sort();
+      stateSelect.innerHTML = '<option value="ALL">All States & Union Territories</option>';
+      states.forEach(st => {
+        const opt = document.createElement('option');
+        opt.value = st;
+        opt.innerText = st;
+        stateSelect.appendChild(opt);
+      });
+    }
+
+    function renderSpaces() {
+      const grid = document.getElementById('spacesGrid');
+      const counter = document.getElementById('totalSpacesCount');
+      const noMsg = document.getElementById('noSpacesMessage');
+      if (!grid) return;
+
+      const searchVal = (document.getElementById('spaceSearchInput')?.value || '').toLowerCase().trim();
+      const stateVal = document.getElementById('stateFilter')?.value || 'ALL';
+      const planVal = document.getElementById('planFilter')?.value || 'ALL';
+      const sortVal = document.getElementById('sortOrderSelect')?.value || 'priority_asc';
+
+      let filtered = spacesData.filter(item => {
+        const matchSearch = item.name.toLowerCase().includes(searchVal) ||
+                            item.city.toLowerCase().includes(searchVal) ||
+                            item.state.toLowerCase().includes(searchVal) ||
+                            item.address.toLowerCase().includes(searchVal);
+        const matchState = (stateVal === 'ALL') || (item.state === stateVal);
+        let matchPlan = true;
+        if (planVal === 'GST') matchPlan = Number(item.priceGst) > 0;
+        if (planVal === 'ROC') matchPlan = Number(item.priceRoc) > 0;
+        if (planVal === 'MAIL') matchPlan = Number(item.priceMail) > 0;
+        return matchSearch && matchState && matchPlan;
+      });
+
+      filtered.sort((a, b) => {
+        if (sortVal === 'priority_asc') return (Number(a.priority) || 999) - (Number(b.priority) || 999);
+        if (sortVal === 'price_asc') return (Number(a.priceGst || a.priceMail)) - (Number(b.priceGst || b.priceMail));
+        if (sortVal === 'price_desc') return (Number(b.priceGst || b.priceMail)) - (Number(a.priceGst || a.priceMail));
+        if (sortVal === 'rating_desc') return (Number(b.rating) || 0) - (Number(a.rating) || 0);
+        return 0;
+      });
+
+      if (counter) counter.innerText = filtered.length;
+      if (filtered.length === 0) {
+        grid.innerHTML = '';
+        if (noMsg) noMsg.classList.remove('hidden');
+        return;
+      }
+      if (noMsg) noMsg.classList.add('hidden');
+
+      grid.innerHTML = filtered.map(s => {
+        const priorityBadge = s.priority ? `<span class="px-2 py-0.5 rounded bg-brand-50 text-brand-700 font-bold text-[10px] border border-brand-200">Priority #${s.priority}</span>` : '';
+        const featuredBadge = (s.featured === true || s.featured === "true" || s.featured === "TRUE") ? `<span class="px-2 py-0.5 rounded bg-amber-500 text-white font-bold text-[10px] uppercase tracking-wider">Featured</span>` : '';
+        const tagList = Array.isArray(s.tags) ? s.tags : String(s.tags || '').split(',');
+
+        return `
+          <div class="bg-white rounded-2xl border border-slate-200/90 shadow-sm hover:shadow-xl hover:border-brand-500 transition-all flex flex-col justify-between overflow-hidden group">
+            <div class="p-6">
+              <div class="flex items-center justify-between gap-2 mb-3">
+                <div class="flex items-center gap-1.5 flex-wrap">
+                  ${featuredBadge}
+                  ${priorityBadge}
+                </div>
+                <div class="flex items-center gap-1 text-amber-500 font-bold text-xs bg-amber-50 px-2 py-0.5 rounded border border-amber-200">
+                  <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400 text-amber-400"></i>
+                  <span>${s.rating || '4.9'}</span>
+                  <span class="text-slate-400 font-normal text-[10px]">(${s.reviews || '80'})</span>
+                </div>
+              </div>
+
+              <h3 class="text-lg font-bold text-slate-900 group-hover:text-brand-600 transition-colors">${s.name}</h3>
+              <p class="text-xs text-brand-700 font-semibold mt-1 flex items-center gap-1">
+                <i data-lucide="map-pin" class="w-3.5 h-3.5"></i>
+                <span>${s.city}, ${s.state}</span>
+              </p>
+              <p class="text-xs text-slate-500 mt-1 line-clamp-1">${s.address}</p>
+
+              <div class="my-5 p-3.5 bg-slate-50 rounded-xl border border-slate-200 grid grid-cols-3 gap-2 text-center">
+                <div>
+                  <span class="block text-[10px] uppercase font-bold text-slate-500">Mailing</span>
+                  <span class="block text-sm font-black text-slate-800">₹${s.priceMail}<span class="text-[9px] font-normal text-slate-500">/mo</span></span>
+                </div>
+                <div class="border-x border-slate-200">
+                  <span class="block text-[10px] uppercase font-bold text-brand-600">GST Reg.</span>
+                  <span class="block text-sm font-black text-brand-700">₹${s.priceGst}<span class="text-[9px] font-normal text-slate-500">/mo</span></span>
+                </div>
+                <div>
+                  <span class="block text-[10px] uppercase font-bold text-slate-500">MCA/ROC</span>
+                  <span class="block text-sm font-black text-slate-800">₹${s.priceRoc}<span class="text-[9px] font-normal text-slate-500">/mo</span></span>
+                </div>
+              </div>
+
+              <div class="flex flex-wrap gap-1.5">
+                ${tagList.map(t => `<span class="px-2 py-1 rounded bg-slate-100 text-slate-600 text-[11px] font-medium">${t.trim()}</span>`).join('')}
+              </div>
+            </div>
+
+            <div class="px-6 py-4 bg-slate-50/70 border-t border-slate-200 flex items-center justify-between gap-3">
+              <a href="https://wa.me/${settingsData.whatsappNumber}?text=Inquiry%20for%20${encodeURIComponent(s.name)}%20(${s.city})" target="_blank" class="p-2.5 rounded-lg border border-emerald-300 text-emerald-700 bg-emerald-50 hover:bg-emerald-100 transition" title="Inquire on WhatsApp">
+                <i data-lucide="message-circle" class="w-4 h-4"></i>
+              </a>
+              <button onclick="openLeadModal('Select Space: ${s.name}', '${s.city}')" class="flex-1 py-2.5 px-4 rounded-lg bg-brand-600 hover:bg-brand-700 text-white font-bold text-xs shadow-sm transition flex items-center justify-center gap-1.5">
+                <span>Book This Space</span>
+                <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+              </button>
+            </div>
+          </div>
+        `;
+      }).join('');
+
+      if (window.lucide) lucide.createIcons();
+    }
+
+    function applyFilters() { renderSpaces(); }
+    function resetFilters() {
+      document.getElementById('spaceSearchInput').value = '';
+      document.getElementById('stateFilter').value = 'ALL';
+      document.getElementById('planFilter').value = 'ALL';
+      document.getElementById('sortOrderSelect').value = 'priority_asc';
+      renderSpaces();
+    }
+
+    function renderTurnkey() {
+      const grid = document.getElementById('turnkeyGrid');
+      if (!grid) return;
+      const sortedTurnkey = [...turnkeyData].sort((a, b) => (Number(a.priority) || 999) - (Number(b.priority) || 999));
+
+      grid.innerHTML = sortedTurnkey.map(item => {
+        const featList = Array.isArray(item.features) ? item.features : String(item.features || '').split(',');
+        return `
+          <div class="bg-slate-800 rounded-2xl p-6 border border-slate-700 flex flex-col justify-between hover:border-brand-400 transition-all group">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <span class="px-2.5 py-0.5 rounded text-[11px] font-bold bg-brand-500/20 text-brand-300 border border-brand-500/30">Priority #${item.priority || 1} • Turnkey</span>
+                <span class="px-2.5 py-0.5 rounded text-[11px] font-bold bg-emerald-500/20 text-emerald-300">Clean Entity</span>
+              </div>
+
+              <h3 class="text-xl font-bold text-white group-hover:text-accent-400 transition-colors">${item.name}</h3>
+              <p class="text-xs text-slate-300 font-medium mt-1">${item.entityType} • ${item.state}</p>
+
+              <div class="my-5 p-3.5 rounded-xl bg-slate-900/80 border border-slate-700 space-y-2 text-xs">
+                <div class="flex justify-between">
+                  <span class="text-slate-400">Capital:</span>
+                  <span class="text-white font-semibold">${item.capital || '₹1,00,000'}</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-slate-400">Bank Account:</span>
+                  <span class="text-emerald-400 font-semibold">${item.bank}</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-slate-400">GST Status:</span>
+                  <span class="text-accent-300 font-semibold">${item.gst}</span>
+                </div>
+              </div>
+
+              <ul class="space-y-1.5 text-xs text-slate-300 mb-6">
+                ${featList.map(f => `<li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> ${f.trim()}</li>`).join('')}
+              </ul>
+            </div>
+
+            <div class="pt-4 border-t border-slate-700 flex items-center justify-between gap-3">
+              <div>
+                <span class="block text-[10px] uppercase font-bold text-slate-400">Total Takeover Price</span>
+                <span class="text-2xl font-black text-white">₹${Number(item.price).toLocaleString('en-IN')}</span>
+              </div>
+              <button onclick="openLeadModal('Takeover: ${item.name}', '${item.state}')" class="px-4 py-2.5 rounded-xl font-bold bg-accent-500 hover:bg-accent-600 text-slate-900 text-xs shadow-md transition flex items-center gap-1">
+                <span>Acquire</span>
+                <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+              </button>
+            </div>
+          </div>
+        `;
+      }).join('');
+
+      if (window.lucide) lucide.createIcons();
+    }
+
+    function renderFaqs() {
+      const container = document.getElementById('faqAccordionContainer');
+      if (!container) return;
+      const sortedFaqs = [...faqsData].sort((a, b) => (Number(a.priority) || 999) - (Number(b.priority) || 999));
+
+      container.innerHTML = sortedFaqs.map((faq, idx) => `
+        <div class="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-sm">
+          <button type="button" onclick="toggleFaq('faq-ans-${idx}', 'faq-icon-${idx}')" class="w-full px-6 py-4 text-left font-bold text-slate-900 flex justify-between items-center hover:bg-slate-50 transition">
+            <span class="text-sm sm:text-base">${faq.question}</span>
+            <i id="faq-icon-${idx}" data-lucide="chevron-down" class="w-5 h-5 text-slate-500 transform transition-transform"></i>
+          </button>
+          <div id="faq-ans-${idx}" class="hidden px-6 pb-5 pt-1 text-xs sm:text-sm text-slate-600 border-t border-slate-100 leading-relaxed bg-slate-50/50">
+            ${faq.answer}
+          </div>
+        </div>
+      `).join('');
+
+      if (window.lucide) lucide.createIcons();
+    }
+
+    function toggleFaq(contentId, iconId) {
+      const content = document.getElementById(contentId);
+      const icon = document.getElementById(iconId);
+      if (!content) return;
+      const isHidden = content.classList.contains('hidden');
+      content.classList.toggle('hidden');
+      if (icon) icon.style.transform = isHidden ? 'rotate(180deg)' : 'rotate(0deg)';
+    }
+
+    function setCalcPlan(plan, monthlyPrice) {
+      calcState.planType = plan;
+      calcState.baseMonthlyPrice = monthlyPrice;
+      document.querySelectorAll('.calc-plan-btn').forEach(btn => {
+        btn.classList.remove('border-2', 'border-brand-400', 'bg-brand-800/40');
+        btn.classList.add('border', 'border-slate-700', 'bg-slate-800/80');
+      });
+      const activeBtn = plan === 'MAIL' ? document.getElementById('btnCalcMail') : (plan === 'GST' ? document.getElementById('btnCalcGst') : document.getElementById('btnCalcRoc'));
+      if (activeBtn) {
+        activeBtn.classList.remove('border-slate-700', 'bg-slate-800/80');
+        activeBtn.classList.add('border-2', 'border-brand-400', 'bg-brand-800/40');
+      }
+      updateCalculator();
+    }
+
+    function setCalcTenure(months, discountRate) {
+      calcState.tenureMonths = months;
+      calcState.discount = discountRate;
+      document.querySelectorAll('.calc-tenure-btn').forEach(btn => {
+        btn.classList.remove('border-2', 'border-brand-400', 'bg-brand-800/40', 'text-white');
+        btn.classList.add('border', 'border-slate-700', 'bg-slate-800/80', 'text-slate-300');
+      });
+      const activeBtn = months === 12 ? document.getElementById('btnTenure12') : (months === 24 ? document.getElementById('btnTenure24') : document.getElementById('btnTenure36'));
+      if (activeBtn) {
+        activeBtn.classList.remove('border-slate-700', 'bg-slate-800/80');
+        activeBtn.classList.add('border-2', 'border-brand-400', 'bg-brand-800/40', 'text-white');
+      }
+      updateCalculator();
+    }
+
+    function updateCalculator() {
+      const hubsSlider = document.getElementById('calcHubsSlider');
+      if (hubsSlider) {
+        calcState.hubs = parseInt(hubsSlider.value) || 1;
+        document.getElementById('calcHubCountLabel').innerText = `${calcState.hubs} ${calcState.hubs > 1 ? 'Hubs' : 'Hub'}`;
+      }
+      const rawTotal = calcState.baseMonthlyPrice * calcState.tenureMonths * calcState.hubs;
+      const discountedTotal = Math.round(rawTotal * (1 - calcState.discount));
+
+      document.getElementById('calcTotalPrice').innerText = `₹${discountedTotal.toLocaleString('en-IN')}`;
+      document.getElementById('calcTenureSubtitle').innerText = `For ${calcState.tenureMonths} Months (${calcState.hubs} ${calcState.hubs > 1 ? 'Hubs' : 'Hub'} • All Legal Docs Included)`;
+      document.getElementById('calcSelectedServiceName').innerText = calcState.planType === 'MAIL' ? 'Business Mailing Hub' : (calcState.planType === 'GST' ? 'GST Registration Package' : 'MCA / ROC Incorporation');
+    }
+
+    function bookCalculatorQuote() {
+      openLeadModal(`Calculated Package: ${calcState.planType} (${calcState.tenureMonths} Mos, ${calcState.hubs} Hubs)`);
+    }
+
+    // DIRECT LEAD POST TO GOOGLE SHEETS
+    async function handlePublicLeadSubmit(event, source) {
+      event.preventDefault();
+      const form = event.target;
+      const formData = new FormData(form);
+
+      const btn = source === 'Hero Form' ? document.getElementById('heroSubmitBtn') : document.getElementById('modalSubmitBtn');
+      if (btn) { btn.disabled = true; btn.innerText = "Submitting..."; }
+
+      const newLead = {
+        id: 'LEAD-' + Math.floor(100000 + Math.random() * 900000),
+        timestamp: new Date().toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' }),
+        name: formData.get('leadName')?.toString().trim() || 'Anonymous',
+        phone: formData.get('leadPhone')?.toString().trim() || '',
+        email: formData.get('leadEmail')?.toString().trim() || '',
+        city: formData.get('leadCity')?.toString().trim() || 'Pan-India',
+        service: formData.get('leadService')?.toString().trim() || source,
+        notes: (formData.get('leadNotes')?.toString() || '') + (formData.get('prefilledItem') ? ` [Item: ${formData.get('prefilledItem')}]` : ''),
+        status: 'New'
+      };
+
+      try {
+        if (API_BACKEND_URL && !API_BACKEND_URL.includes("YOUR_DEPLOYED_URL_HERE")) {
+          await fetch(API_BACKEND_URL, {
+            method: 'POST',
+            mode: 'no-cors',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ action: 'addLead', lead: newLead })
+          });
+        }
+      } catch (err) {
+        console.warn('Network issue writing to Google Sheet', err);
+      }
+
+      if (btn) { btn.disabled = false; btn.innerText = "Submit Inquiry"; }
+
+      if (source === 'Hero Form') {
+        const ok = document.getElementById('heroLeadSuccess');
+        ok.classList.remove('hidden');
+        form.reset();
+        setTimeout(() => ok.classList.add('hidden'), 5000);
+      } else {
+        const ok = document.getElementById('modalSuccessMsg');
+        ok.classList.remove('hidden');
+        form.reset();
+        setTimeout(() => {
+          closeLeadModal();
+          ok.classList.add('hidden');
+        }, 2500);
+      }
+    }
+
+    function openLeadModal(title, city = '') {
+      document.getElementById('modalTitle').innerText = title || 'Request Space Proposal';
+      document.getElementById('modalPrefilledItem').value = title || '';
+      if (city) document.getElementById('modalCityInput').value = city;
+      document.getElementById('leadModal').classList.remove('hidden');
+    }
+
+    function closeLeadModal() {
+      document.getElementById('leadModal').classList.add('hidden');
+    }
+
+    document.addEventListener('DOMContentLoaded', loadDataFromCloud);
+  </script>
+</body>
+</html>
