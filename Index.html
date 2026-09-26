@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Virtual Desk India | Virtual Office for GST & MCA Registration</title>
-  <meta name="description" content="Virtual Office addresses in 100+ Indian cities for GST registration, ROC incorporation, and mailing support.">
+  <meta name="description" content="Virtual Office addresses across Indian states and capitals for GST registration, ROC incorporation, and mailing address.">
   <meta name="robots" content="index, follow">
 
   <script src="https://cdn.tailwindcss.com"></script>
@@ -35,14 +35,14 @@
         <span class="hidden md:inline text-slate-300">Unconditional Owner NOC + 12-Month Lease + Municipal Bill</span>
       </div>
       <div class="flex items-center gap-4 text-slate-300">
-        <a id="topPhoneLink" href="tel:+919876543210" class="hover:text-white flex items-center gap-1 transition">
+        <a id="topPhoneLink" href="#" class="hover:text-white flex items-center gap-1 transition">
           <i data-lucide="phone-call" class="w-3 h-3 text-accent-400"></i>
-          <span id="topPhoneText">+91 98765 43210</span>
+          <span id="topPhoneText">Loading...</span>
         </a>
         <span class="text-slate-600">|</span>
-        <a id="topEmailLink" href="mailto:support@virtualdeskindia.com" class="hover:text-white flex items-center gap-1 transition">
+        <a id="topEmailLink" href="#" class="hover:text-white flex items-center gap-1 transition">
           <i data-lucide="mail" class="w-3 h-3 text-accent-400"></i>
-          <span id="topEmailText">support@virtualdeskindia.com</span>
+          <span id="topEmailText">Loading...</span>
         </a>
       </div>
     </div>
@@ -98,7 +98,7 @@
         <div class="lg:col-span-7 space-y-6">
           <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-semibold bg-brand-100 text-brand-800 border border-brand-200">
             <i data-lucide="map-pin" class="w-3.5 h-3.5 text-brand-600"></i>
-            Active Locations in All Indian States & State Capitals
+            Pan-India Commercial Addresses Managed via Google Sheets
           </div>
 
           <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-[1.15]">
@@ -106,7 +106,7 @@
           </h1>
 
           <p class="text-lg text-slate-600 leading-relaxed max-w-2xl">
-            Prime business addresses across Delhi NCR, Mumbai, Bengaluru, Hyderabad, and all state capitals. Compliant NOC, Electricity Bill & Rent Agreement delivered within 24 hours.
+            Prime business addresses across Indian state capitals and commercial centres. Full statutory documentation kit delivered within 24 hours.
           </p>
 
           <div class="grid grid-cols-3 gap-4 pt-2 border-y border-slate-200 py-4 max-w-xl">
@@ -136,7 +136,7 @@
           </div>
         </div>
 
-        <!-- Hero Form -->
+        <!-- Proposal Form -->
         <div class="lg:col-span-5">
           <div class="bg-white rounded-2xl p-6 sm:p-8 shadow-xl border border-slate-200 relative">
             <div class="absolute -top-3 right-6 bg-gradient-to-r from-emerald-500 to-teal-500 text-white text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-sm">
@@ -163,19 +163,8 @@
               <div class="grid grid-cols-2 gap-3">
                 <div>
                   <label class="block text-xs font-semibold text-slate-700 mb-1">Preferred City</label>
-                  <select name="leadCity" class="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 text-sm focus:ring-2 focus:ring-brand-500 focus:outline-none bg-white">
-                    <option value="Delhi NCR">Delhi NCR</option>
-                    <option value="Mumbai">Mumbai</option>
-                    <option value="Bengaluru">Bengaluru</option>
-                    <option value="Hyderabad">Hyderabad</option>
-                    <option value="Chennai">Chennai</option>
-                    <option value="Kolkata">Kolkata</option>
-                    <option value="Pune">Pune</option>
-                    <option value="Ahmedabad">Ahmedabad / GIFT City</option>
-                    <option value="Jaipur">Jaipur</option>
-                    <option value="Lucknow">Lucknow</option>
-                    <option value="Kochi">Kochi</option>
-                    <option value="Other">Other State Capital</option>
+                  <select id="heroCitySelect" name="leadCity" class="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 text-sm focus:ring-2 focus:ring-brand-500 focus:outline-none bg-white">
+                    <option value="Pan-India">Pan-India / Any City</option>
                   </select>
                 </div>
                 <div>
@@ -194,7 +183,7 @@
                 <i data-lucide="arrow-right" class="w-4 h-4"></i>
               </button>
               <div id="heroLeadSuccess" class="hidden p-3 rounded-lg bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs font-medium text-center">
-                ✓ Thank you! Your proposal request has been logged. Our compliance officer will reach out via WhatsApp shortly.
+                ✓ Thank you! Your proposal request has been logged into our Google Sheet. Our officer will reach out via WhatsApp shortly.
               </div>
             </form>
           </div>
@@ -212,7 +201,7 @@
         <div>
           <span class="text-xs uppercase font-bold tracking-wider text-brand-600">Pan-India Availability</span>
           <h2 class="text-3xl font-extrabold text-slate-900 mt-1">Commercial Spaces & Business Hubs</h2>
-          <p class="text-slate-600 text-sm mt-1">Ranked by verification status, authority compliance, and priority rating</p>
+          <p class="text-slate-600 text-sm mt-1">Populated directly from your Google Sheet in order of Priority</p>
         </div>
         
         <div class="flex items-center gap-3">
@@ -262,7 +251,10 @@
 
       <!-- Spaces Cards Grid -->
       <div id="spacesGrid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        <div class="col-span-full py-12 text-center text-slate-400">Loading spaces...</div>
+        <div class="col-span-full py-16 text-center text-slate-500">
+          <div class="animate-spin w-8 h-8 border-4 border-brand-600 border-t-transparent rounded-full mx-auto mb-3"></div>
+          <p class="font-medium text-sm">Loading commercial inventory from Google Sheets...</p>
+        </div>
       </div>
 
       <div id="noSpacesMessage" class="hidden text-center py-16 bg-white rounded-2xl border border-dashed border-slate-300 mt-4">
@@ -388,7 +380,7 @@
       </div>
 
       <div id="turnkeyGrid" class="grid md:grid-cols-3 gap-6">
-        <!-- Rendered via JavaScript -->
+        <div class="col-span-full py-12 text-center text-slate-500">Loading turnkey business entities...</div>
       </div>
 
     </div>
@@ -447,7 +439,7 @@
       </div>
 
       <div id="faqAccordionContainer" class="space-y-4">
-        <!-- Populated via JavaScript -->
+        <div class="py-8 text-center text-slate-400 text-sm">Loading FAQs...</div>
       </div>
     </div>
   </section>
@@ -562,10 +554,10 @@
 
         <div>
           <h4 class="text-xs uppercase font-bold tracking-wider text-slate-200 mb-3">Contact Support</h4>
-          <p class="text-xs text-slate-300" id="footerAddressText">DLF Cyber City, Tower B, Gurugram, Haryana</p>
+          <p class="text-xs text-slate-300" id="footerAddressText">Connecting to Google Sheet...</p>
           <div class="mt-3 space-y-1.5 text-xs">
-            <p><strong class="text-white">Helpline:</strong> <span id="footerPhoneText">+91 98765 43210</span></p>
-            <p><strong class="text-white">Email:</strong> <span id="footerEmailText">support@virtualdeskindia.com</span></p>
+            <p><strong class="text-white">Helpline:</strong> <span id="footerPhoneText">...</span></p>
+            <p><strong class="text-white">Email:</strong> <span id="footerEmailText">...</span></p>
           </div>
         </div>
 
@@ -582,72 +574,54 @@
     </div>
   </footer>
 
-  <!-- DYNAMIC LIVE CONNECTIVITY SCRIPT -->
+  <!-- SCRIPT ENGINE (100% SHEET-DRIVEN, ZERO HARDCODED INVENTORY) -->
   <script>
-    // === DEPLOYED GOOGLE APPS SCRIPT WEB APP URL ===
     const API_BACKEND_URL = "https://script.google.com/macros/s/AKfycbxaNSET1_Dwi_tbnaPDQdzSP-rg_ldKn3a8OLLkqvfVewgMn3btJk7izdtsIW8EvcLl/exec";
 
-    const DEFAULT_SPACES = [
-      { id: 'VDI-DL-01', priority: 1, name: 'Connaught Place Premium Hub', city: 'New Delhi', state: 'Delhi NCR', address: 'Barakhamba Road, Connaught Place', priceMail: 999, priceGst: 1499, priceRoc: 1999, featured: true, rating: 4.9, reviews: 142, tags: ['Metro Station Access', 'GST Signage Board', 'Physical Audit Support'] },
-      { id: 'VDI-MH-02', priority: 2, name: 'BKC Financial Tower', city: 'Mumbai', state: 'Maharashtra', address: 'Bandra Kurla Complex, Bandra East', priceMail: 1499, priceGst: 2199, priceRoc: 2799, featured: true, rating: 4.95, reviews: 198, tags: ['Grade-A Tower', 'Fast NOC', 'Courier Dispatch'] },
-      { id: 'VDI-KA-03', priority: 3, name: 'Koramangala Tech Park', city: 'Bengaluru', state: 'Karnataka', address: '80 Feet Road, 4th Block, Koramangala', priceMail: 1199, priceGst: 1799, priceRoc: 2299, featured: true, rating: 4.9, reviews: 165, tags: ['Fast Electricity Bill', 'Meeting Rooms', 'Startup Hub'] },
-      { id: 'VDI-TS-04', priority: 4, name: 'HITEC City Silicon Hub', city: 'Hyderabad', state: 'Telangana', address: 'Cyber Towers Road, HITEC City, Madhapur', priceMail: 999, priceGst: 1499, priceRoc: 1999, featured: true, rating: 4.88, reviews: 120, tags: ['T-Hub Proximity', 'ROC Cleared', 'On-site Manager'] },
-      { id: 'VDI-TN-05', priority: 5, name: 'Guindy Industrial Corridor', city: 'Chennai', state: 'Tamil Nadu', address: 'Mount Poonamallee Road, Guindy', priceMail: 899, priceGst: 1399, priceRoc: 1899, featured: false, rating: 4.85, reviews: 94, tags: ['Airport Access', 'Instant NOC', 'Courier Desk'] },
-      { id: 'VDI-MH-06', priority: 6, name: 'Hinjewadi Phase 1 Hub', city: 'Pune', state: 'Maharashtra', address: 'Rajiv Gandhi Infotech Park, Hinjewadi', priceMail: 899, priceGst: 1399, priceRoc: 1899, featured: false, rating: 4.86, reviews: 88, tags: ['IT Hub', 'Fast Document Dispatch', 'GST Verified'] }
-    ];
-
-    const DEFAULT_TURNKEY = [
-      { id: 'TB-01', priority: 1, name: 'Nexora Tech Solutions Pvt Ltd', entityType: 'Private Limited Company', state: 'Karnataka (Bengaluru)', capital: '₹1,00,000', bank: 'HDFC Bank (Active Current A/c)', gst: 'Active 29XXXX GSTIN', price: 49999, features: ['Clean CIBIL', 'Ready MCA INC-22', 'Directorship transfer in 48h', 'DSC Included'] },
-      { id: 'TB-02', priority: 2, name: 'AeroStar Logistics & Trade LLP', entityType: 'Limited Liability Partnership', state: 'Maharashtra (Mumbai)', capital: '₹1,00,000', bank: 'ICICI Bank (Active Current A/c)', gst: 'Active 27XXXX GSTIN', price: 38999, features: ['Zero Debt', 'IEC Code Active', 'Ready LLP Agreement', 'PAN & TAN Active'] },
-      { id: 'TB-03', priority: 3, name: 'Vanguard Finserve Ventures Pvt Ltd', entityType: 'Private Limited Company', state: 'Delhi NCR (New Delhi)', capital: '₹5,00,000', bank: 'Axis Bank (Active Current A/c)', gst: 'Active 07XXXX GSTIN', price: 64999, features: ['1+ Year Vintage', 'Higher Authorized Capital', 'Instant Board Resolution', 'Immediate Billing Ready'] }
-    ];
-
-    const DEFAULT_FAQS = [
-      { id: 'FAQ-01', priority: 1, question: 'Will the GST Officer approve this virtual office address?', answer: 'Yes, 100%. We provide an unconditional owner NOC, a 12-month registered commercial rent agreement, and the latest municipal electricity bill. Our center team assists directly during field visits.' },
-      { id: 'FAQ-02', priority: 2, question: 'Can I open an Indian Bank Current Account with this address?', answer: 'Absolutely. Leading banks (HDFC, ICICI, SBI, Axis, Kotak) routinely verify and open accounts using our legal documentation and registered office proof.' },
-      { id: 'FAQ-03', priority: 3, question: 'How quickly will I receive the legal registration documents?', answer: 'Once your basic KYC documents (PAN, Aadhaar/Passport) are submitted, we execute and deliver all digital notarized documents within 24 business hours.' }
-    ];
-
-    const DEFAULT_SETTINGS = {
+    let spacesData = [];
+    let turnkeyData = [];
+    let faqsData = [];
+    let settingsData = {
       whatsappNumber: '919876543210',
-      whatsappGreeting: 'Hello Virtual Desk India, I would like to inquire about virtual office space and pricing.',
+      whatsappGreeting: 'Hello Virtual Desk India, I would like to inquire about virtual office space.',
       helplinePhone: '+91 98765 43210',
       supportEmail: 'support@virtualdeskindia.com',
-      corporateOffice: 'Level 8, DLF Cyber City, Tower B, Gurugram, Haryana - 122002'
+      corporateOffice: 'Corporate Hub, India'
     };
-
-    let spacesData = [...DEFAULT_SPACES];
-    let turnkeyData = [...DEFAULT_TURNKEY];
-    let faqsData = [...DEFAULT_FAQS];
-    let settingsData = { ...DEFAULT_SETTINGS };
 
     let calcState = { planType: 'GST', baseMonthlyPrice: 1299, tenureMonths: 12, discount: 0.15, hubs: 1 };
 
     async function loadDataFromCloud() {
-      renderAllComponents();
-
-      if (!API_BACKEND_URL || API_BACKEND_URL.includes("YOUR_DEPLOYED_URL_HERE")) {
-        return;
-      }
-
       try {
         const resp = await fetch(API_BACKEND_URL + "?action=loadAll");
         const json = await resp.json();
         if (json.status === "success") {
-          if (json.spaces && json.spaces.length > 0) spacesData = json.spaces;
-          if (json.turnkey && json.turnkey.length > 0) turnkeyData = json.turnkey;
-          if (json.faqs && json.faqs.length > 0) faqsData = json.faqs;
-          if (json.settings && Object.keys(json.settings).length > 0) settingsData = { ...DEFAULT_SETTINGS, ...json.settings };
+          spacesData = json.spaces || [];
+          turnkeyData = json.turnkey || [];
+          faqsData = json.faqs || [];
+          if (json.settings && Object.keys(json.settings).length > 0) {
+            settingsData = { ...settingsData, ...json.settings };
+          }
           renderAllComponents();
+        } else {
+          showEmptyState("Could not read inventory from Google Sheet.");
         }
       } catch (err) {
-        console.warn("Could not fetch remote sheet data", err);
+        console.error("Cloud fetch error:", err);
+        showEmptyState("Error connecting to Google Sheets. Verify Web App deployment access is set to 'Anyone'.");
       }
+    }
+
+    function showEmptyState(msg) {
+      document.getElementById('spacesGrid').innerHTML = `<div class="col-span-full py-12 text-center text-red-600 text-sm font-semibold">${msg}</div>`;
+      document.getElementById('turnkeyGrid').innerHTML = `<div class="col-span-full py-12 text-center text-slate-500 text-sm">${msg}</div>`;
+      document.getElementById('faqAccordionContainer').innerHTML = `<div class="py-8 text-center text-slate-500 text-sm">${msg}</div>`;
     }
 
     function renderAllComponents() {
       applySettingsToDOM();
       populateStateFilterOptions();
+      populateHeroCityOptions();
       renderSpaces();
       renderTurnkey();
       renderFaqs();
@@ -664,7 +638,7 @@
       const topPhoneLink = document.getElementById('topPhoneLink');
       const topPhoneText = document.getElementById('topPhoneText');
       const footerPhoneText = document.getElementById('footerPhoneText');
-      if (topPhoneLink) topPhoneLink.href = `tel:${settingsData.helplinePhone.replace(/\s+/g, '')}`;
+      if (topPhoneLink) topPhoneLink.href = `tel:${String(settingsData.helplinePhone).replace(/\s+/g, '')}`;
       if (topPhoneText) topPhoneText.innerText = settingsData.helplinePhone;
       if (footerPhoneText) footerPhoneText.innerText = settingsData.helplinePhone;
 
@@ -682,13 +656,26 @@
     function populateStateFilterOptions() {
       const stateSelect = document.getElementById('stateFilter');
       if (!stateSelect) return;
-      const states = Array.from(new Set(spacesData.map(s => s.state))).sort();
+      const states = Array.from(new Set(spacesData.map(s => s.state))).filter(Boolean).sort();
       stateSelect.innerHTML = '<option value="ALL">All States & Union Territories</option>';
       states.forEach(st => {
         const opt = document.createElement('option');
         opt.value = st;
         opt.innerText = st;
         stateSelect.appendChild(opt);
+      });
+    }
+
+    function populateHeroCityOptions() {
+      const citySelect = document.getElementById('heroCitySelect');
+      if (!citySelect) return;
+      const cities = Array.from(new Set(spacesData.map(s => s.city))).filter(Boolean).sort();
+      citySelect.innerHTML = '<option value="Pan-India">Pan-India / Any City</option>';
+      cities.forEach(c => {
+        const opt = document.createElement('option');
+        opt.value = c;
+        opt.innerText = c;
+        citySelect.appendChild(opt);
       });
     }
 
@@ -704,10 +691,10 @@
       const sortVal = document.getElementById('sortOrderSelect')?.value || 'priority_asc';
 
       let filtered = spacesData.filter(item => {
-        const matchSearch = item.name.toLowerCase().includes(searchVal) ||
-                            item.city.toLowerCase().includes(searchVal) ||
-                            item.state.toLowerCase().includes(searchVal) ||
-                            item.address.toLowerCase().includes(searchVal);
+        const matchSearch = String(item.name || '').toLowerCase().includes(searchVal) ||
+                            String(item.city || '').toLowerCase().includes(searchVal) ||
+                            String(item.state || '').toLowerCase().includes(searchVal) ||
+                            String(item.address || '').toLowerCase().includes(searchVal);
         const matchState = (stateVal === 'ALL') || (item.state === stateVal);
         let matchPlan = true;
         if (planVal === 'GST') matchPlan = Number(item.priceGst) > 0;
@@ -716,6 +703,7 @@
         return matchSearch && matchState && matchPlan;
       });
 
+      // Strict Priority View sorting directly from Google Sheet 'priority' column
       filtered.sort((a, b) => {
         if (sortVal === 'priority_asc') return (Number(a.priority) || 999) - (Number(b.priority) || 999);
         if (sortVal === 'price_asc') return (Number(a.priceGst || a.priceMail)) - (Number(b.priceGst || b.priceMail));
@@ -809,6 +797,11 @@
       if (!grid) return;
       const sortedTurnkey = [...turnkeyData].sort((a, b) => (Number(a.priority) || 999) - (Number(b.priority) || 999));
 
+      if (sortedTurnkey.length === 0) {
+        grid.innerHTML = '<div class="col-span-full py-8 text-center text-slate-400 text-xs">No turnkey companies listed in Google Sheet tab "Turnkey".</div>';
+        return;
+      }
+
       grid.innerHTML = sortedTurnkey.map(item => {
         const featList = Array.isArray(item.features) ? item.features : String(item.features || '').split(',');
         return `
@@ -863,6 +856,11 @@
       const container = document.getElementById('faqAccordionContainer');
       if (!container) return;
       const sortedFaqs = [...faqsData].sort((a, b) => (Number(a.priority) || 999) - (Number(b.priority) || 999));
+
+      if (sortedFaqs.length === 0) {
+        container.innerHTML = '<div class="py-4 text-center text-slate-400 text-xs">No FAQs listed in Google Sheet tab "FAQs".</div>';
+        return;
+      }
 
       container.innerHTML = sortedFaqs.map((faq, idx) => `
         <div class="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-sm">
@@ -936,14 +934,14 @@
       openLeadModal(`Calculated Package: ${calcState.planType} (${calcState.tenureMonths} Mos, ${calcState.hubs} Hubs)`);
     }
 
-    // DIRECT LEAD POST TO GOOGLE SHEETS
+    // APPEND LEAD DIRECTLY INTO GOOGLE SHEETS TAB 'Leads'
     async function handlePublicLeadSubmit(event, source) {
       event.preventDefault();
       const form = event.target;
       const formData = new FormData(form);
 
       const btn = source === 'Hero Form' ? document.getElementById('heroSubmitBtn') : document.getElementById('modalSubmitBtn');
-      if (btn) { btn.disabled = true; btn.innerText = "Submitting..."; }
+      if (btn) { btn.disabled = true; btn.innerText = "Submitting to Sheet..."; }
 
       const newLead = {
         id: 'LEAD-' + Math.floor(100000 + Math.random() * 900000),
@@ -958,16 +956,14 @@
       };
 
       try {
-        if (API_BACKEND_URL && !API_BACKEND_URL.includes("YOUR_DEPLOYED_URL_HERE")) {
-          await fetch(API_BACKEND_URL, {
-            method: 'POST',
-            mode: 'no-cors',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ action: 'addLead', lead: newLead })
-          });
-        }
+        await fetch(API_BACKEND_URL, {
+          method: 'POST',
+          mode: 'no-cors',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ action: 'addLead', lead: newLead })
+        });
       } catch (err) {
-        console.warn('Network issue writing to Google Sheet', err);
+        console.warn('Network issue writing to Google Sheet:', err);
       }
 
       if (btn) { btn.disabled = false; btn.innerText = "Submit Inquiry"; }
