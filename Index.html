@@ -574,9 +574,13 @@
     </div>
   </footer>
 
-  <!-- SCRIPT ENGINE (100% SHEET-DRIVEN, ZERO HARDCODED INVENTORY) -->
+  <!-- SCRIPT ENGINE: USING DEDICATED SPREADSHEET 1 & 2 ENDPOINTS -->
   <script>
-    const API_BACKEND_URL = "https://script.google.com/macros/s/AKfycbxaNSET1_Dwi_tbnaPDQdzSP-rg_ldKn3a8OLLkqvfVewgMn3btJk7izdtsIW8EvcLl/exec";
+    // SPREADSHEET 1: Leads and Enquiries target
+    const SPREADSHEET_1_LEADS_URL = "https://script.google.com/macros/s/AKfycbwWLalx9ha2eAnkc3sKfpw5o_WfhWg6Oc1-oTQVSF2lghwL7YTwrcOAhcU8SNFroqk/exec";
+
+    // SPREADSHEET 2: Inventory, Spaces, Turnkey, FAQs, Settings reader
+    const SPREADSHEET_2_DATA_URL = "https://script.google.com/macros/s/AKfycbwa28l-9uiieCliZg-DPxACmpwLxI88w5AG9yfJHDgZcj7_4ivagoeYY6tlh_ueX6rLrw/exec";
 
     let spacesData = [];
     let turnkeyData = [];
@@ -591,9 +595,10 @@
 
     let calcState = { planType: 'GST', baseMonthlyPrice: 1299, tenureMonths: 12, discount: 0.15, hubs: 1 };
 
+    // READ INVENTORY FROM SPREADSHEET 2
     async function loadDataFromCloud() {
       try {
-        const resp = await fetch(API_BACKEND_URL + "?action=loadAll");
+        const resp = await fetch(SPREADSHEET_2_DATA_URL + "?action=loadAll");
         const json = await resp.json();
         if (json.status === "success") {
           spacesData = json.spaces || [];
@@ -604,7 +609,7 @@
           }
           renderAllComponents();
         } else {
-          showEmptyState("Could not read inventory from Google Sheet.");
+          showEmptyState("Could not read inventory from Google Sheet 2.");
         }
       } catch (err) {
         console.error("Cloud fetch error:", err);
@@ -934,7 +939,7 @@
       openLeadModal(`Calculated Package: ${calcState.planType} (${calcState.tenureMonths} Mos, ${calcState.hubs} Hubs)`);
     }
 
-    // APPEND LEAD DIRECTLY INTO GOOGLE SHEETS TAB 'Leads'
+    // APPEND LEAD DIRECTLY INTO SPREADSHEET 1 (Leads)
     async function handlePublicLeadSubmit(event, source) {
       event.preventDefault();
       const form = event.target;
@@ -956,14 +961,14 @@
       };
 
       try {
-        await fetch(API_BACKEND_URL, {
+        await fetch(SPREADSHEET_1_LEADS_URL, {
           method: 'POST',
           mode: 'no-cors',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ action: 'addLead', lead: newLead })
         });
       } catch (err) {
-        console.warn('Network issue writing to Google Sheet:', err);
+        console.warn('Network issue writing to Spreadsheet 1:', err);
       }
 
       if (btn) { btn.disabled = false; btn.innerText = "Submit Inquiry"; }
